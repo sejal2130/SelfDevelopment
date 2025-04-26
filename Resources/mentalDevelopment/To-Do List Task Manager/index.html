@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <div class="progress-container">
+            <p>Task Progress: <span id="progress-text">0%</span></p>
+            <div class="progress-bar"><div id="progress"></div></div>
+        </div>
+        
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Enter task...">
+            <input type="datetime-local" id="taskTime">
+            <select id="priority">
+                <option value="High">🔥 High</option>
+                <option value="Medium">⚡ Medium</option>
+                <option value="Low">💡 Low</option>
+            </select>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

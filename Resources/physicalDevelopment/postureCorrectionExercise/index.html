@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Posture Correction Exercises</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #edf7fa, #d0e7f9);
+      margin: 0;
+      padding: 20px;
+      animation: fadeIn 1.5s ease;
+      color: #2e2e2e;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      animation: slideUp 1s ease;
+    }
+
+    h2 {
+      color: #2e7d32;
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      color: #388e3c;
+      margin-top: 40px;
+      font-size: 1.6rem;
+      border-bottom: 2px solid #c8e6c9;
+      padding-bottom: 5px;
+      display: inline-block;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    ul {
+      text-align: left;
+      padding-left: 25px;
+      margin-top: 15px;
+    }
+
+    li {
+      margin-bottom: 12px;
+      font-size: 1.05rem;
+      color: #444;
+    }
+
+    .section {
+      margin-top: 40px;
+      animation: fadeIn 2s ease;
+    }
+
+    .video-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+      margin-top: 25px;
+    }
+
+    .video {
+      width: 100%;
+      height: 225px;
+      border-radius: 15px;
+      border: none;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.4s ease;
+    }
+
+    .video:hover {
+      transform: scale(1.03);
+    }
+
+    .info-box {
+      background: #f1f8e9;
+      padding: 20px;
+      border-left: 6px solid #66bb6a;
+      border-radius: 10px;
+      margin-top: 25px;
+      color: #33691e;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 14px 30px;
+      background: #2e7d32;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .back-button:hover {
+      background: #1b5e20;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 480px) {
+      h2 {
+        font-size: 1.8rem;
+      }
+      h3 {
+        font-size: 1.4rem;
+      }
+      .back-button {
+        padding: 12px 25px;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Posture Correction Exercises</h2>
+    <p>Improve your alignment, ease discomfort, and build confidence with these expert tips and video routines.</p>
+
+    <div class="info-box">
+      <strong>💡 Did you know?</strong> Consistently practicing posture exercises can improve breathing, reduce fatigue, and enhance overall appearance.
+    </div>
+
+    <div class="section">
+      <h3>✨ Why Posture Matters</h3>
+      <p>Posture affects your energy levels, spinal health, and even your mood. Correct alignment reduces tension and enhances body efficiency.</p>
+    </div>
+
+    <div class="section">
+      <h3>🎥 Guided Exercise Videos</h3>
+      <div class="video-container">
+        <iframe class="video" src="https://www.youtube.com/embed/z1B3sU3W_Wk" title="5 Minute Daily Posture Routine" allowfullscreen></iframe>
+        <iframe class="video" src="https://www.youtube.com/embed/k1luKAS_Xcg" title="Posture Fix Exercises" allowfullscreen></iframe>
+        <iframe class="video" src="https://www.youtube.com/embed/qHnVWxZ6l6M" title="Stretch to Fix Rounded Shoulders" allowfullscreen></iframe>
+        <iframe class="video" src="https://www.youtube.com/embed/2F6P0LZik5Y" title="Correct Forward Head Posture" allowfullscreen></iframe>
+        <iframe class="video" src="https://www.youtube.com/embed/9fJjMZcPFl4" title="Posture Alignment Routine" allowfullscreen></iframe>
+        <iframe class="video" src="https://www.youtube.com/embed/6h5e-WGvmuU" title="Yoga for Posture Correction" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>✅ Posture Tips</h3>
+      <ul>
+        <li>Keep your spine neutral when sitting and standing.</li>
+        <li>Strengthen your core to support better alignment.</li>
+        <li>Take stretch breaks every hour during long screen time.</li>
+        <li>Adjust your screen to eye level to prevent hunching.</li>
+        <li>Wear supportive shoes and avoid crossing legs often.</li>
+        <li>Sleep on your back or side with adequate pillow support.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>🚫 Common Posture Mistakes</h3>
+      <ul>
+        <li>Slouching or leaning forward excessively</li>
+        <li>Looking down at your phone ("tech neck")</li>
+        <li>Sitting in soft chairs without lumbar support</li>
+        <li>Carrying heavy bags on one side</li>
+        <li>Standing with weight unevenly distributed</li>
+      </ul>
+    </div>
+
+    <a href="/Resources/physicalDevelopment.html" class="back-button">⬅ Back to Physical Development</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top Educational Podcasts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f3e5f5, #e3f2fd);
+      color: #2c3e50;
+      padding: 20px;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: 2.6rem;
+      color: #4a148c;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 1.2rem;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #6a1b9a;
+    }
+
+    .podcast-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .podcast-card {
+      background: #fff3e0;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .podcast-card:hover {
+      transform: scale(1.03);
+    }
+
+    .podcast-card h3 {
+      font-size: 1.4rem;
+      color: #e65100;
+      margin-bottom: 10px;
+    }
+
+    .podcast-card p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .podcast-card a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      background-color: #ef6c00;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+
+    .podcast-card a:hover {
+      background-color: #e65100;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 14px 28px;
+      background: #4a148c;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .back-button:hover {
+      background: #2e0854;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Top Educational Podcasts</h2>
+    <p class="quote">"An investment in knowledge pays the best interest." – Benjamin Franklin</p>
+
+    <div class="podcast-container">
+      <div class="podcast-card">
+        <h3>TED Talks Daily</h3>
+        <p>Get inspired by thought-provoking ideas and stories from experts in every field.</p>
+        <a href="https://www.ted.com/podcasts/ted-talks-daily" target="_blank">Listen Now</a>
+      </div>
+
+      <div class="podcast-card">
+        <h3>The EdSurge Podcast</h3>
+        <p>Weekly podcasts exploring how technology is reshaping education and learning.</p>
+        <a href="https://www.edsurge.com/research/guides/edsurge-podcast" target="_blank">Listen Now</a>
+      </div>
+
+      <div class="podcast-card">
+        <h3>The Knowledge Project</h3>
+        <p>Explore better decision-making, mental models, and timeless lessons from experts.</p>
+        <a href="https://fs.blog/knowledge-project/" target="_blank">Listen Now</a>
+      </div>
+
+      <div class="podcast-card">
+        <h3>The Musafir Stories (India)</h3>
+        <p>Explore India’s diversity and heritage through incredible travel tales and interviews.</p>
+        <a href="https://themusafirstories.com/" target="_blank">Listen Now</a>
+      </div>
+
+      <div class="podcast-card">
+        <h3>The Seen and the Unseen (India)</h3>
+        <p>Deep-dive into Indian politics, policy, and philosophy with engaging discussions.</p>
+        <a href="https://seenunseen.in/" target="_blank">Listen Now</a>
+      </div>
+
+      <div class="podcast-card">
+        <h3>Indian Noir</h3>
+        <p>Gripping audio storytelling and thrilling fiction brought to life by creator Nikesh Murali.</p>
+        <a href="https://indianoir.com/" target="_blank">Listen Now</a>
+      </div>
+    </div>
+
+    <a href="/Resources/educationalDevelopment.html" class="back-button">⬅ Back to Educational Development</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Best Certification Programs</title>
+  <style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #f0e6ff, #e0f7ff);
+        color: #222;
+        }
+
+        .header {
+        text-align: center;
+        padding: 60px 20px 40px;
+        background: linear-gradient(135deg, #8360c3, #2ebf91);
+        color: white;
+        animation: fadeInDown 1s ease-in-out;
+        }
+
+        .header h1 {
+        font-size: 2.6rem;
+        margin-bottom: 15px;
+        }
+
+        .header p {
+        font-size: 1.2rem;
+        }
+
+        .certification-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        padding: 40px 5%;
+        animation: fadeInUp 1s ease-in-out;
+        }
+
+        .cert-card {
+        background: white;
+        border-radius: 15px;
+        padding: 25px 20px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        }
+
+        .cert-card img {
+        max-width: 140px;
+        height: 60px;
+        object-fit: contain;
+        margin-bottom: 20px;
+        }
+
+        .cert-card h2 {
+        font-size: 1.3rem;
+        color: #2c2c6c;
+        margin-bottom: 10px;
+        }
+
+        .cert-card p {
+        font-size: 1rem;
+        color: #555;
+        }
+
+        .cert-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #2c2c6c;
+        color: white;
+        font-size: 0.9rem;
+        margin-top: 50px;
+        }
+
+        @keyframes fadeInDown {
+        from { opacity: 0; transform: translateY(-40px); }
+        to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(40px); }
+        to { opacity: 1; transform: translateY(0); }
+        }
+
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>📜 Best Certification Programs</h1>
+    <p>Get recognized with top industry certifications from world-class platforms.</p>
+  </header>
+
+  <section class="certification-section">
+    <div class="cert-card" onclick="openCertification('https://www.coursera.org/professional-certificates')">
+      <img src="https://vectorseek.com/wp-content/uploads/2024/05/Coursera-Logo-Vector.svg-.png" alt="Coursera">
+      <h2>Coursera Professional Certificates</h2>
+      <p>Job-ready certificates from Google, IBM, Meta & more to enhance your resume.</p>
+    </div>
+
+    <div class="cert-card" onclick="openCertification('https://www.edx.org/professional-certificate')">
+      <img src="https://th.bing.com/th/id/OIP.4JSgDk500ultc49-dHgLygHaDj?rs=1&pid=ImgDetMain" alt="edX">
+      <h2>edX Professional Certificates</h2>
+      <p>University-backed certifications from Harvard, MIT, and top institutions.</p>
+    </div>
+
+    <div class="cert-card" onclick="openCertification('https://www.google.com/certificates/')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/512px-Google_2015_logo.svg.png" alt="Google Certificates">
+      <h2>Google Career Certificates</h2>
+      <p>Fast-track certifications in IT, UX Design, Data Analytics and more.</p>
+    </div>
+
+    <div class="cert-card" onclick="openCertification('https://www.udacity.com/nanodegree')">
+      <img src="https://www.pinpng.com/pngs/m/662-6629938_udacity-logo-svg-hd-png-download.png" alt="Udacity">
+      <h2>Udacity Nanodegree</h2>
+      <p>Project-based programs in AI, Cloud, Programming, and Business Analytics.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Self Development | Best Certification Programs</p>
+  </footer>
+
+  <script>
+    function openCertification(url) {
+      window.open(url, "_blank");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notion for Note-Taking</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.7/quill.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.7/quill.snow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="notepad-container">
+        <h1>Notion for Note-Taking</h1>
+
+        <!-- Dark Mode Toggle -->
+        <button id="toggleDarkMode">🌙 Dark Mode</button>
+
+        <!-- Rich Text Editor -->
+        <div id="editor"></div>
+
+        <button id="saveNote">💾 Save Note</button>
+        <button id="clearNote">🗑 Clear</button>
+        <button id="downloadPDF">📄 Download as PDF</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

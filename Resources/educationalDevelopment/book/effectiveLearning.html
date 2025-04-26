@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Effective Learning Techniques</title>
+    <link rel="stylesheet" href="./card.css" />
+</head>
+<body>
+
+    <header class="header">
+        <h1>Effective Learning Techniques</h1>
+        <p>Unlock smarter ways to study, absorb, and retain knowledge.</p>
+    </header>
+
+    <section class="content">
+        <div class="book-card" onclick="openArticle('make-it-stick.html')">
+            <img src="/assets/make-it-stick.jpg" alt="Make It Stick">
+            <h2>Make It Stick</h2>
+            <p>Backed by research, this book reveals how real learning happens.</p>
+        </div>
+
+        <div class="book-card" onclick="openArticle('learning-how-to-learn.html')">
+            <img src="/assets/learning-how-to-learn.jpg" alt="Learning How to Learn">
+            <h2>Learning How to Learn</h2>
+            <p>Science-based techniques for students of all ages to learn effectively.</p>
+        </div>
+
+        <div class="book-card" onclick="openArticle('ultralearning.html')">
+            <img src="/assets/ultralearning.jpg" alt="Ultralearning by Scott H. Young">
+            <h2>Ultralearning</h2>
+            <p>Master hard skills quickly and outpace the competition with deep strategies.</p>
+        </div>
+
+        <div class="book-card" onclick="openArticle('a-mind-for-numbers.html')">
+            <img src="/assets/a-mind-for-numbers.jpg" alt="A Mind for Numbers">
+            <h2>A Mind for Numbers</h2>
+            <p>Especially helpful for those learning math, science, and technical subjects.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Self Development | Effective Learning Techniques</p>
+    </footer>
+
+    <script>
+        function openArticle(page) {
+            window.location.href = page;
+        }
+    </script>
+
+</body>
+</html>

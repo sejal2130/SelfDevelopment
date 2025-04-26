@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philosophy</title>
+    <link rel="stylesheet" href="./cards.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Philosophy</h1>
+        <p>Explore timeless wisdom, deep thinking, and philosophical ideas that shape our world.</p>
+    </header>
+
+    <section class="content">
+        <div class="book-card" onclick="openArticle('stoicism.html')">
+            <img src="/assets/stoicism.webp" alt="Stoicism">
+            <h2>Stoicism</h2>
+            <p>Learn about Stoic philosophy and how it can help you develop resilience and inner peace.</p>
+        </div>
+
+        <div class="book-card" onclick="openArticle('existentialism.html')">
+            <img src="/assets/existentialism.jpg" alt="Existentialism">
+            <h2>Existentialism</h2>
+            <p>Dive into the philosophy of existence, free will, and meaning in life.</p>
+        </div>
+
+        <div class="book-card" onclick="openArticle('ethics.html')">
+            <img src="/assets/ethics.jpg" alt="Ethics">
+            <h2>Ethics & Morality</h2>
+            <p>Understand the principles of right and wrong, and how they shape human behavior.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Self Development | Philosophy</p>
+    </footer>
+
+    <script>
+        function openArticle(page) {
+            window.location.href = page;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Self Development</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .resources-container {
+            width: 85%;
+            margin: 50px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            color: #2C3E50;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #f9f9f9, #e3e3ff);
+            padding: 20px;
+            border-radius: 15px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h3 {
+            color: #4A47A3;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            display: inline-block;
+            background: #4A47A3;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .card a:hover {
+            background: #1F1D59;
+        }
+
+        @media (max-width: 768px) {
+            .cards-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resources-container">
+        <h2>📖 Resources for Self-Development</h2>
+        
+        <div class="cards-container">
+            <div class="card">
+                <h3>🧠 Mental Development</h3>
+                <a href="Resources/mentalDevelopment.html">Explore Resources</a>
+            </div>
+            
+            <div class="card">
+                <h3>🏋️ Physical Development</h3>
+                <a href="Resources/physicalDevelopment.html">Explore Resources</a>
+            </div>
+
+            <div class="card">
+                <h3>📚 Educational Development</h3>
+                <a href="Resources/educationalDevelopment.html">Explore Resources</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

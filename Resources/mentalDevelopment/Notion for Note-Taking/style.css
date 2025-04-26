@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: #333;
+    text-align: center;
+    padding: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Notepad Container */
+.notepad-container {
+    width: 90%;
+    max-width: 700px;
+    background: #fff;
+    padding: 25px;
+    margin: 50px auto;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Quill Editor */
+#editor {
+    height: 300px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    background: #fafafa;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Buttons */
+button {
+    padding: 12px 20px;
+    margin: 15px 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    outline: none;
+}
+
+#saveNote {
+    background: #28a745;
+    color: white;
+}
+
+#clearNote {
+    background: #dc3545;
+    color: white;
+}
+
+#downloadPDF {
+    background: #007bff;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* 🌙 Dark Mode */
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+.dark-mode .notepad-container {
+    background: #1e1e1e;
+}
+
+.dark-mode #editor {
+    background: #2e2e2e;
+    color: white;
+}
+
+.dark-mode button {
+    background: #444;
+    color: white;
+}
+
+.dark-mode button:hover {
+    background: #666;
+}

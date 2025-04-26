@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Self Development</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+            background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background: white;
+            width: 40%;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-section h2 {
+            margin-bottom: 20px;
+            color: #2a2a2a;
+            text-align: center;
+        }
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .form-container label,
+        .form-container input {
+            text-align: left;
+            display: block;
+            width: 100%;
+        }
+        .form-container input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .btn {
+            background: navy;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background: darkblue;
+        }
+        .back-btn {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: navy;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h2>Register</h2>
+            <form class="form-container">
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Enter Your Name" name="name" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Your Email" name="email" required>
+
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+
+                <div class="btn-container">
+                    <button type="submit" class="btn">Register</button>
+                    <a href="index.html" class="back-btn">Back to Home</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

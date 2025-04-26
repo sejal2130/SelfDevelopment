@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Study Skills & Productivity</title>
+  <link rel="stylesheet" href="./card.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>Study Skills & Productivity</h1>
+    <p>Boost your academic performance and manage time like a pro.</p>
+  </header>
+
+  <section class="content">
+    <div class="book-card" onclick="openArticle('deep-work.html')">
+      <img src="/assets/deep-work.jpg" alt="Deep Work">
+      <h2>Deep Work</h2>
+      <p>Master focused success in a distracted world.</p>
+    </div>
+
+    <div class="book-card" onclick="openArticle('atomic-habits.html')">
+      <img src="/assets/atomic-habits.jpg" alt="Atomic Habits">
+      <h2>Atomic Habits</h2>
+      <p>Build productive routines and break bad habits.</p>
+    </div>
+
+    <div class="book-card" onclick="openArticle('make-it-stick.html')">
+      <img src="/assets/make-it-stick.jpg" alt="Make It Stick">
+      <h2>Make It Stick</h2>
+      <p>Science-based techniques to enhance learning and retention.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Self Development | Study Skills & Productivity</p>
+  </footer>
+
+  <script>
+    function openArticle(page) {
+      window.location.href = page;
+    }
+  </script>
+
+</body>
+</html>

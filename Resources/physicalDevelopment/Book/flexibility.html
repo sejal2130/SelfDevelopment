@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition & Diet</title>
+    <link rel="stylesheet" href="./cards.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Nutrition & Diet</h1>
+        <p>Books that provide insights into healthy eating and nutrition.</p>
+    </header>
+
+    <section class="content">
+        <div class="book-card" onclick="openArticle('the-plant-based-diet.html')">
+            <img src="/assets/the-plant-based-diet.jpg" alt="The Plant-Based Diet">
+            <h2>The Plant-Based Diet</h2>
+            <p>A comprehensive guide to a healthier, plant-focused diet.</p>
+        </div>
+
+        <div class="book-card" onclick="openArticle('nutrition-for-athletes.html')">
+            <img src="/assets/nutrition-for-athletes.jpg" alt="Nutrition for Athletes">
+            <h2>Nutrition for Athletes</h2>
+            <p>Optimizing nutrition for peak physical performance.</p>
+        </div>
+
+        <div class="book-card" onclick="openArticle('intuitive-eating.html')">
+            <img src="/assets/intuitive-eating.jpg" alt="Intuitive Eating">
+            <h2>Intuitive Eating</h2>
+            <p>Developing a balanced and mindful approach to eating.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Self Development | Nutrition & Diet</p>
+    </footer>
+
+    <script>
+        function openArticle(page) {
+            window.location.href = page;
+        }
+    </script>
+
+</body>
+</html>

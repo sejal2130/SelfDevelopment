@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skill Development Platforms</title>
+  <style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #c3ecf3, #e3d7f2);
+        color: #333;
+        }
+
+        .header {
+        text-align: center;
+        padding: 50px 20px 30px;
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        color: white;
+        animation: fadeInDown 1s ease;
+        }
+
+        .header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        }
+
+        .header p {
+        font-size: 1.2rem;
+        }
+
+        .platforms-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        padding: 40px 5%;
+        animation: fadeInUp 1s ease;
+        }
+
+        .platform-card {
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        }
+
+        .platform-card img {
+        max-width: 120px;
+        height: 60px;
+        object-fit: contain;
+        margin-bottom: 15px;
+        }
+
+        .platform-card h2 {
+        margin: 10px 0;
+        font-size: 1.4rem;
+        color: #2d2d5d;
+        }
+
+        .platform-card p {
+        color: #555;
+        font-size: 1rem;
+        }
+
+        .platform-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #2c2c6c;
+        color: white;
+        font-size: 0.9rem;
+        margin-top: 40px;
+        }
+
+        @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        }
+
+        @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        }
+
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>🚀 Skill Development Platforms</h1>
+    <p>Explore top platforms to boost your skills for personal and career growth.</p>
+  </header>
+
+  <section class="platforms-section">
+    <div class="platform-card" onclick="openPlatform('https://www.udemy.com/')">
+      <img src="https://1.bp.blogspot.com/-35ocAYkBmy8/Yxktp-EulPI/AAAAAAAAUZU/cpaTmRYJGI8if1c6vhqc6rL3pLddjnX8ACNcBGAsYHQ/s512/Udemy.png" alt="Udemy Logo"/>
+      <h2>Udemy</h2>
+      <p>Thousands of affordable courses taught by industry experts in tech, business, and more.</p>
+    </div>
+
+    <div class="platform-card" onclick="openPlatform('https://www.linkedin.com/learning/')">
+      <img src="https://th.bing.com/th/id/OIP.Fc-evvSo3ccnVv1tjSvkcQHaHa?w=199&h=199&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="LinkedIn Learning"/>
+      <h2>LinkedIn Learning</h2>
+      <p>Professional skill development with personalized recommendations based on your profile.</p>
+    </div>
+
+    <div class="platform-card" onclick="openPlatform('https://www.skillshare.com/')">
+      <img src="https://www.pikpng.com/pngl/b/385-3858931_skillshare-logo-png.png" alt="Skillshare Logo"/>
+      <h2>Skillshare</h2>
+      <p>Creative and practical courses covering design, productivity, freelancing, and more.</p>
+    </div>
+
+    <div class="platform-card" onclick="openPlatform('https://www.codecademy.com/')">
+      <img src="https://svglogos.net/wp-content/uploads/codecademy.svg" alt="Codecademy Logo"/>
+      <h2>Codecademy</h2>
+      <p>Interactive learning paths for coding, web development, data science, and computer science.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Self Development | Skill Development Platforms</p>
+  </footer>
+
+  <script>
+    function openPlatform(url) {
+      window.open(url, "_blank");
+    }
+  </script>
+</body>
+</html>

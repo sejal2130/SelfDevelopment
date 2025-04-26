@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Courses - Coursera & edX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: white;
+      animation: fadeInDown 1s ease;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .course-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .course-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .course-card img {
+      max-width: 100%;
+      height: 180px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .course-card h2 {
+      margin: 15px 0 10px;
+      font-size: 1.25rem;
+      color: #222;
+    }
+
+    .course-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .footer {
+      text-align: center;
+      background: #333;
+      color: white;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Free Courses - Coursera & edX</h1>
+    <p>Explore world-class learning opportunities from top universities for free!</p>
+  </header>
+
+  <section class="content">
+    <div class="course-card" onclick="openCourse('https://www.coursera.org/learn/learning-how-to-learn')">
+      <img src="/assets/learning-how-to-learn.jpg" alt="Learning How to Learn" />
+      <h2>Learning How to Learn</h2>
+      <p>Master mental tools to tackle tough subjects and boost your learning capacity.</p>
+    </div>
+
+    <div class="course-card" onclick="openCourse('https://www.edx.org/course/cs50s-introduction-to-computer-science')">
+      <img src="/assets/harvard-cs50.jpg" alt="CS50 from Harvard" />
+      <h2>CS50: Intro to Computer Science</h2>
+      <p>One of the best introductory computer science courses—now 100% free!</p>
+    </div>
+
+    <div class="course-card" onclick="openCourse('https://www.edx.org/course/the-science-of-happiness')">
+      <img src="/assets/science-of-happiness.jpg" alt="Science of Happiness" />
+      <h2>The Science of Happiness</h2>
+      <p>Unlock research-backed habits to live a more meaningful, fulfilled life.</p>
+    </div>
+
+    <div class="course-card" onclick="openCourse('https://www.coursera.org/specializations/google-it-support')">
+      <img src="/assets/google-it-support.jpg" alt="Google IT Support" />
+      <h2>Google IT Support</h2>
+      <p>Launch a career in IT with this professional certificate from Google.</p>
+    </div>
+
+    <div class="course-card" onclick="openCourse('https://www.coursera.org/learn/machine-learning')">
+      <img src="/assets/machine-learning.jpg" alt="Machine Learning" />
+      <h2>Machine Learning by Stanford</h2>
+      <p>Andrew Ng's legendary ML course—perfect for beginners and developers.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Self Development | Free Courses - Coursera & edX</p>
+  </footer>
+
+  <script>
+    function openCourse(url) {
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>

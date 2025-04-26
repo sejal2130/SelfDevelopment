@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classics with Life Lessons</title>
+    <link rel="stylesheet" href="./cards.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Classics with Life Lessons</h1>
+        <p>Timeless books that shape perspectives and inspire personal growth.</p>
+    </header>
+
+    <section class="content">
+        <div class="book-card" onclick="openArticle('the-alchemist.html')">
+            <img src="/assets/the-alchemist.jpg" alt="The Alchemist">
+            <h2>The Alchemist</h2>
+            <p>A journey of self-discovery and following one’s dreams.</p>
+        </div>
+
+        <div class="book-card" onclick="openArticle('to-kill-a-mockingbird.html')">
+            <img src="/assets/to-kill-a-mockingbird.jpg" alt="To Kill a Mockingbird">
+            <h2>To Kill a Mockingbird</h2>
+            <p>A powerful story about empathy, morality, and justice.</p>
+        </div>
+
+        <div class="book-card" onclick="openArticle('man-search-meaning.html')">
+            <img src="/assets/man-search-meaning.jpg" alt="Man’s Search for Meaning">
+            <h2>Man’s Search for Meaning</h2>
+            <p>Exploring purpose and resilience in life’s toughest moments.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Self Development | Classics with Life Lessons</p>
+    </footer>
+
+    <script>
+        function openArticle(page) {
+            window.location.href = page;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top Educational YouTube Channels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+      color: #2c3e50;
+      padding: 20px;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: 2.6rem;
+      color: #1a237e;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 1.2rem;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #6a1b9a;
+    }
+
+    .channel-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .channel-card {
+      background: #f9f9ff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+      overflow: hidden;
+    }
+
+    .channel-card:hover {
+      transform: scale(1.03);
+    }
+
+    .channel-card h3 {
+      font-size: 1.4rem;
+      color: #3949ab;
+      margin-bottom: 10px;
+    }
+
+    .channel-card p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .channel-card a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      background-color: #1a237e;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+
+    .channel-card a:hover {
+      background-color: #0d1b4c;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 14px 28px;
+      background: #1a237e;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .back-button:hover {
+      background: #0d1b4c;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Top Educational YouTube Channels</h2>
+    <p class="quote">"Learning never exhausts the mind." – Leonardo da Vinci</p>
+
+    <div class="channel-container">
+      <div class="channel-card">
+        <h3>Khan Academy</h3>
+        <p>Free world-class education for anyone, anywhere. Covers math, science, and more.</p>
+        <a href="https://www.youtube.com/user/khanacademy" target="_blank">Visit Channel</a>
+      </div>
+
+      <div class="channel-card">
+        <h3>CrashCourse</h3>
+        <p>High-energy, fun, and comprehensive courses on literature, science, and history.</p>
+        <a href="https://www.youtube.com/user/crashcourse" target="_blank">Visit Channel</a>
+      </div>
+
+      <div class="channel-card">
+        <h3>Veritasium</h3>
+        <p>Engaging science videos exploring physics, psychology, and more through experiments and logic.</p>
+        <a href="https://www.youtube.com/user/1veritasium" target="_blank">Visit Channel</a>
+      </div>
+
+      <div class="channel-card">
+        <h3>Thomas Frank</h3>
+        <p>Tips on productivity, studying efficiently, and becoming a better student and professional.</p>
+        <a href="https://www.youtube.com/user/electrickeye91" target="_blank">Visit Channel</a>
+      </div>
+    </div>
+
+    <a href="/Resources/educationalDevelopment.html" class="back-button">⬅ Back to Educational Development</a>
+  </div>
+</body>
+</html>

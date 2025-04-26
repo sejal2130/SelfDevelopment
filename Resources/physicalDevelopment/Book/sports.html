@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports & Endurance Books</title>
+    <link rel="stylesheet" href="./cards.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Sports & Endurance Books</h1>
+        <p>Enhance performance, stamina, and resilience with these top reads.</p>
+    </header>
+
+    <section class="content">
+        <div class="book-card" onclick="openArticle('endure.html')">
+            <img src="/assets/endure.jpg" alt="Endure">
+            <h2>Endure</h2>
+            <p>Explores the limits of human performance and endurance.</p>
+        </div>
+
+        <div class="book-card" onclick="openArticle('born-to-run.html')">
+            <img src="/assets/born-to-run.jpg" alt="Born to Run">
+            <h2>Born to Run</h2>
+            <p>An inspiring journey into the world of endurance running.</p>
+        </div>
+
+        <div class="book-card" onclick="openArticle('training-endurance-athletes.html')">
+            <img src="/assets/training-endurance.jpg" alt="Training for Endurance Athletes">
+            <h2>Training for Endurance Athletes</h2>
+            <p>A guide to optimizing endurance and athletic performance.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Self Development | Sports & Endurance Books</p>
+    </footer>
+
+    <script>
+        function openArticle(page) {
+            window.location.href = page;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Development Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .quiz-container, .resources-container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2C3E50;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            margin-top: 20px;
+            color: #0077b6;
+            font-weight: 600;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            font-weight: 400;
+            color: #333;
+        }
+
+        select, input[type="radio"] {
+            margin-top: 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #b0c4de;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: white;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        select:hover {
+            border-color: #0077b6;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: 600;
+            background: #0077b6;
+            color: white;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background: #023e8a;
+            transform: scale(1.03);
+        }
+
+        .resources-container {
+            display: none;
+        }
+
+        .resource-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .resource-links li {
+            margin: 10px 0;
+        }
+
+        .resource-links a {
+            text-decoration: none;
+            color: #0077b6;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h2>Self-Development Assessment</h2>
+        <form id="quizForm">
+            <h3>Physical Development</h3>
+            <label>1. How often do you engage in physical activity?</label>
+            <select name="physical_activity">
+                <option value="rarely">Rarely</option>
+                <option value="occasionally">Occasionally</option>
+                <option value="regularly">Regularly</option>
+                <option value="very_frequent">Very frequently</option>
+            </select>
+
+            <label>2. How would you rate your overall fitness level?</label>
+            <label><input type="radio" name="fitness" value="poor"> Poor</label>
+            <label><input type="radio" name="fitness" value="average"> Average</label>
+            <label><input type="radio" name="fitness" value="good"> Good</label>
+            <label><input type="radio" name="fitness" value="excellent"> Excellent</label>
+
+            <h3>Mental Development</h3>
+            <label>3. How do you usually handle stress?</label>
+            <select name="stress_handling">
+                <option value="overwhelmed">I get overwhelmed easily</option>
+                <option value="struggle">I try to manage but struggle</option>
+                <option value="some_techniques">I have some stress-relief techniques</option>
+                <option value="very_well">I handle stress very well</option>
+            </select>
+
+            <h3>Educational & Career Development</h3>
+            <label>5. What is your preferred way of learning new skills?</label>
+            <select name="learning_style">
+                <option value="reading">Reading books/articles</option>
+                <option value="videos">Watching videos & tutorials</option>
+                <option value="hands_on">Hands-on practice</option>
+                <option value="mentors">Learning from mentors</option>
+            </select>
+
+            <button type="submit">Get My Suggestions</button>
+        </form>
+    </div>
+
+    <!-- Resources Section -->
+    <div id="resources-section" class="resources-container">
+        <h2>📖 Resources for Self-Development</h2>
+        <ul class="resource-links" id="resource-links"></ul>
+    </div>
+
+    <script>
+        document.getElementById("quizForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            // Fetch user responses
+            const formData = new FormData(event.target);
+            let responses = {};
+            for (let [key, value] of formData.entries()) {
+                responses[key] = value;
+            }
+
+            // Generate resource links based on responses
+            const resources = {
+                "physical_activity": {
+                    "rarely": "https://www.healthline.com/nutrition/how-to-start-exercising",
+                    "occasionally": "https://www.self.com/story/how-to-build-an-exercise-routine",
+                    "regularly": "https://www.verywellfit.com/exercise-plans-1231467",
+                    "very_frequent": "https://www.bodybuilding.com/workout-plans"
+                },
+                "stress_handling": {
+                    "overwhelmed": "https://www.helpguide.org/articles/stress/stress-management.htm",
+                    "struggle": "https://www.psychologytoday.com/us/blog/the-moment-you-feel-it/202007/10-stress-management-techniques",
+                    "some_techniques": "https://www.headspace.com/meditation/stress",
+                    "very_well": "https://www.mindful.org/how-to-meditate/"
+                },
+                "learning_style": {
+                    "reading": "https://www.goodreads.com/shelf/show/self-improvement",
+                    "videos": "https://www.udemy.com/courses/personal-development/",
+                    "hands_on": "https://www.codecademy.com/",
+                    "mentors": "https://www.masterclass.com/"
+                }
+            };
+
+            let linksHTML = "";
+            for (const [key, value] of Object.entries(responses)) {
+                if (resources[key] && resources[key][value]) {
+                    linksHTML += `<li><a href="${resources[key][value]}" target="_blank">${resources[key][value]}</a></li>`;
+                }
+            }
+
+            document.getElementById("resource-links").innerHTML = linksHTML;
+            document.getElementById("resources-section").style.display = "block";
+
+            // Scroll to resources section
+            document.getElementById("resources-section").scrollIntoView({ behavior: "smooth" });
+        });
+    </script>
+
+</body>
+</html>

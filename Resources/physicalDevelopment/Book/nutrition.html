@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition & Diet Books</title>
+    <link rel="stylesheet" href="./cards.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Nutrition & Diet Books</h1>
+        <p>Guides to healthy eating, balanced diets, and nutritional well-being.</p>
+    </header>
+
+    <section class="content">
+        <div class="book-card" onclick="openArticle('the-nutrition-book.html')">
+            <img src="/assets/nutrition.jpeg" alt="The Nutrition Book">
+            <h2>The Nutrition Book</h2>
+            <p>A complete guide to understanding the science of nutrition.</p>
+        </div>
+
+        <div class="book-card" onclick="openArticle('eat-to-live.html')">
+            <img src="/assets/eat-to-live.jpeg" alt="Eat to Live">
+            <h2>Eat to Live</h2>
+            <p>How the right diet can improve your health and longevity.</p>
+        </div>
+
+        <div class="book-card" onclick="openArticle('the-plant-based-diet.html')">
+            <img src="/assets/the-plant-based-diet.jpeg" alt="The Plant-Based Diet">
+            <h2>The Plant-Based Diet</h2>
+            <p>Eating whole foods for a healthier lifestyle.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Self Development | Nutrition & Diet Books</p>
+    </footer>
+
+    <script>
+        function openArticle(page) {
+            window.location.href = page;
+        }
+    </script>
+
+</body>
+</html>

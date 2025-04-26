@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    
+    <style>
+        /* Import Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #4A47A3, #1F1D59);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            opacity: 0;
+            animation: fadeInPage 1s ease-in-out forwards;
+        }
+
+        /* Page Fade-in Animation */
+        @keyframes fadeInPage {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Hero Section */
+        .hero {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 70px 20px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeInHero 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeInHero {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideInText 1s ease-in-out 0.5s forwards;
+        }
+
+        @keyframes slideInText {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: #FFD700;
+            font-size: 28px;
+        }
+
+        p {
+            color: #ddd;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Team Section */
+        .team-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .team-member {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 280px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            opacity: 0;
+            transform: scale(0.8);
+            animation: zoomIn 0.8s ease-in-out forwards;
+        }
+
+        @keyframes zoomIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .team-member:nth-child(1) { animation-delay: 0.5s; }
+        .team-member:nth-child(2) { animation-delay: 0.7s; }
+        .team-member:nth-child(3) { animation-delay: 0.9s; }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #FFD700;
+            margin-bottom: 10px;
+        }
+
+        .team-member h3 {
+            font-size: 20px;
+            color: #FFD700;
+            margin: 5px 0;
+        }
+
+        .team-member p {
+            font-size: 14px;
+            color: #ddd;
+            margin: 0;
+        }
+
+        /* Zoom Effect on Hover */
+        .team-member:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Back Button */
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 22px;
+            background-color: #FFD700;
+            color: #1F1D59;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .back-button:hover {
+            background-color: #FFC107;
+            transform: scale(1.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .team-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>About Us</h1>
+        <p>Empowering individuals to unlock their full potential through personalized self-development.</p>
+    </div>
+
+    <!-- About Section -->
+    <div class="container">
+        <h2>Our Mission</h2>
+        <p>Our platform provides personalized recommendations to help individuals improve their mental well-being, career growth, and physical fitness. We believe in data-driven insights and AI-powered analysis to guide users towards self-improvement.</p>
+
+        <h2>Meet Our Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100" alt="Team Member">
+                <h3>Jane Doe</h3>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100" alt="Team Member">
+                <h3>John Smith</h3>
+                <p>Lead Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100" alt="Team Member">
+                <h3>Emily Johnson</h3>
+                <p>UX Designer</p>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
+
+</body>
+</html>

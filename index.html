@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Development</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+            <nav class="navbar">
+                <div class="logo-container">
+                    <img src="assets/logo.png" alt="Self Development Logo" class="logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="quiz.html">Take a Quiz</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="form.html">
+                    <button class="register-btn">Register</button>
+                </a>
+            </nav>
+
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <div class="text-content">
+                    <h1 class="fade-in">Unlock Your <span>Full Potential</span></h1>
+                    <p class="fade-in-delay">Get personalized insights for mental well-being, career success, and physical fitness.</p>
+                    <div class="search-bar fade-in-delay">
+                        <input type="text" placeholder="Search for self-improvement resources...">
+                        <button>Search</button>
+                    </div>
+                </div>
+                <div class="images-container fade-in">
+                    <img src="assets/team.webp" alt="Group Learning" class="image-animate">
+                    <img src="assets/yoga.avif" alt="Meditation" class="image-animate">
+                </div>
+            </div>
+
+        <section class="features">
+            <div class="feature">
+                <h3>Personalized Growth</h3>
+                <p>Receive AI-driven recommendations tailored to your self-improvement journey.</p>
+            </div>
+            <div class="feature">
+                <h3>Comprehensive Assessment</h3>
+                <p>Take a detailed quiz to analyze your strengths and areas for improvement.</p>
+            </div>
+            <div class="feature">
+                <h3>Community Support</h3>
+                <p>Join a community of like-minded individuals for motivation and guidance.</p>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>About Us</h3>
+                    <p>Your personalized self-development platform for career, mind, and body.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: <a href="mailto:support@selfdevelopment.com">support@selfdevelopment.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Self Development | All Rights Reserved</p>
+            </div>
+        </footer>
+        <!-- Chatbot Floating Button -->
+        <div id="chatbotIcon">💬</div>
+
+        <!-- Chatbot Window -->
+        <div id="chatbotWindow">
+            <div id="chatbotHeader">
+                <span>🤖 AI Chatbot</span>
+                <button id="closeChatbot">✖</button>
+            </div>
+            <div id="chatbotMessages"></div>
+            <div class="chat-input-container">
+                <input type="text" id="chatInput" placeholder="Type a message..." />
+                <button id="sendMessage">➤</button>
+            </div>
+        </div>
+
+        <!-- Chatbot Script -->
+        <script src="chatbot/chatbot.js"></script>
+
+        
+<!-- 
+        Chatbot Container
+        <div id="chatbotContainer"></div>
+
+         JavaScript to Load Chatbot Dynamically
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                fetch("chatbot/chatbot.html") 
+                    .then(response => response.text())
+                    .then(html => {
+                        document.getElementById("chatbotContainer").innerHTML = html;
+
+                        // Wait until chatbot is fully loaded before running JS
+                        setTimeout(() => {
+                            let script = document.createElement("script");
+                            script.src = "chatbot/chatbot.js";
+                            document.body.appendChild(script);
+                        }, 500); 
+                    })
+                    .catch(error => console.error("Error loading chatbot:", error));
+
+            });
+        </script> 
+
+
+-->
+        
+    </div>
+</body>
+</html>

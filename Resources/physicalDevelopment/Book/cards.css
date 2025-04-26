@@ -1,0 +1,62 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f4f8;
+}
+
+.header {
+    text-align: center;
+    background: linear-gradient(135deg, #ff8c00, #ff4500);
+    color: white;
+    padding: 40px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.book-card {
+    width: 280px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.book-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.book-card h2 {
+    margin-top: 15px;
+    color: #333;
+}
+
+.book-card p {
+    color: #555;
+    font-size: 14px;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c2c6c;
+    color: white;
+    margin-top: 40px;
+}
